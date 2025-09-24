@@ -31,6 +31,37 @@ html,body{height:100%;background:var(--bg);color:var(--text);font-family:Inter,s
 .container{max-width:1000px;margin:0 auto;padding:2rem;}
 .panel{padding:2.5rem 1rem;background:transparent;border-bottom:1px solid rgba(255,255,255,0.03);}
 
+/* Team header photo: full-width, never cropped */
+.team-header-photo{ /* wrapper to center and add spacing */
+  margin:1.25rem 0; /* spacing above/below the group photo */
+  text-align:center;
+  overflow:visible; /* allow whole image to show */
+}
+
+/* the image itself — width 100% and height auto keeps the whole image visible */
+.team-header-photo img{
+  width:100%;      /* fill container width */
+  height:auto;     /* preserve aspect ratio; prevents cropping */
+  max-height:none; /* ensure no forced cropping by a max-height rule */
+  display:block;
+  border-radius:8px; /* optional rounded corners; remove if you want sharp edges */
+  object-fit:contain; /* defensive: keep whole image inside box if object sizing used */
+}
+
+/* optional caption styling */
+.team-photo-caption{
+  margin-top:0.5rem;
+  color:rgba(255,255,255,0.65);
+  font-size:0.95rem;
+}
+
+/* ensure container padding matches the rest of the site */
+.team-intro{margin-top:0.5rem;color:rgba(255,255,255,0.9);}
+
+/* If you previously had rules that limit img height globally, ensure team header bypasses them */
+/* Example override (only include if you have a global img max-height): */
+.team-header-photo img{ max-height:none !important; }
+
 /* Team grid */
 .team-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem;margin-top:1rem;}
 .team-card{background:var(--card);padding:1rem;border-radius:8px;text-align:center;}
