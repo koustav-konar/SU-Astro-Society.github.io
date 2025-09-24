@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>SU Astronomy Society</title>
+  <link rel="stylesheet" href="css/styles.css" /> <!-- main stylesheet -->
+</head>
+<body>
+  <!-- Top banner with overlayed club name -->
+  <header class="banner" id="banner">
+    <img src="images/banner.jpg" alt="Star field banner" class="banner-img" /> <!-- background image -->
+    <div class="banner-overlay">
+      <h1 class="club-title">SU Astronomy Society</h1> <!-- overlayed club name -->
+      <p class="club-subtitle">Join us in exploring the Cosmos</p> <!-- optional subtitle -->
+    </div>
+  </header>
+
+  <!-- Tab navigation that sits under the banner -->
+  <nav class="tab-nav" id="tabNav">
+    <ul>
+      <li><a href="#about" data-target="about" class="tab-link">About</a></li>
+      <li><a href="#team" data-target="team" class="tab-link">Meet the team</a></li>
+      <li><a href="#gallery" data-target="gallery" class="tab-link">Gallery</a></li>
+      <li><a href="#events" data-target="events" class="tab-link">Events</a></li>
+      <li><a href="#newsletter" data-target="newsletter" class="tab-link">Newsletter</a></li>
+      <li><a href="#sponsors" data-target="sponsors" class="tab-link">Sponsors</a></li>
+    </ul>
+  </nav>
+
+  <!-- Content sections -->
+  <main>
+    <section id="about" class="panel">
+      <div class="container">
+        <h2>About</h2>
+        <p>The society is called “Stellenbosch University Astronomy Society”,  and is affiliated with the Societies Council of Stellenbosch University. 
+        The Society exists to foster academic interest and community engagement in the field of astronomy, and operates in line with Stellenbosch University’s values and policies.</p>
+      </div>
+    </section>
+
+    <section id="team" class="panel">
+      <div class="container">
+        <h2>Meet the team</h2>
+        <div class="team-grid">
+          <!-- Team card 1 -->
+          <article class="team-card">
+            <img src="images/team1.jpg" alt="Hemanth" class="team-photo" /> <!-- team member photo -->
+            <h3>Hemanth</h3>
+            <p class="role">Chairperson</p>
+            <p class="bio">Oversees general proceedings.</p>
+          </article>
+          <!-- Duplicate team cards and change image/name to add more members -->
+          <article class="team-card">
+            <img src="images/team2.jpg" alt="Phillip" class="team-photo" />
+            <h3>Phillip</h3>
+            <p class="role">Vice-chairperson</p>
+            <p class="bio">Assists Chairperson.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="panel">
+      <div class="container">
+        <h2>Gallery</h2>
+        <div class="gallery-grid">
+          <!-- Put gallery images here -->
+          <figure class="gallery-item">
+            <img src="images/gal1.jpg" alt="Galaxy 1" />
+            <figcaption>Galaxy 1</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img src="images/gal2.jpg" alt="Nebula" />
+            <figcaption>Nebula</figcaption>
+          </figure>
+          <!-- add more gallery items -->
+        </div>
+      </div>
+    </section>
+
+    <section id="events" class="panel">
+      <div class="container">
+        <h2>Events</h2>
+        <p>List upcoming events here with dates, times, and links to RSVP.</p>
+      </div>
+    </section>
+
+    <section id="newsletter" class="panel">
+      <div class="container">
+        <h2>Newsletter</h2>
+        <p>Signup form placeholder. Replace with your form provider or a simple mailto link.</p>
+      </div>
+    </section>
+
+    <section id="sponsors" class="panel">
+      <div class="container">
+        <h2>Sponsors</h2>
+        <p>Show sponsor logos or thank-you notes here.</p>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/script.js"></script> <!-- behavior script -->
+</body>
+</html>
